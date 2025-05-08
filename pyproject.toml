@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "duckdb-llm-udf"
+version = "0.1.1"
+description = "LLM UDF extension for DuckDB (Python interface)"
+authors = [
+    { name="Your Name", email="your@email.com" }
+]
+readme = "README.md"
+requires-python = ">=3.7"
+license = { file="LICENSE" }
+dependencies = [
+    "duckdb>=0.8.0",
+    "python-dotenv>=0.19.0",
+    "numpy>=1.21.0",
+    # Add other dependencies here, e.g. "openai", "python-dotenv"
+]
+[project.optional-dependencies]
+openai = ["openai>=1.0.0"]
+anthropic = ["anthropic>=0.5.0"]
+all = ["openai>=1.0.0", "anthropic>=0.5.0"]
