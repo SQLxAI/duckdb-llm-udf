@@ -3,7 +3,11 @@
 ![Python 3.8+](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![DuckDB 0.8.0+](https://img.shields.io/badge/DuckDB-0.8.0+-yellow.svg)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)]
+(https://github.com/SQLxAI/duckdb-llm-udf)
+[![Stars](https://img.shields.io/github/stars/SQLxAI/duckdb-llm-udf?style=social)](https://github.com/SQLxAI/duckdb-llm-udf)
+
+
 
 > Query your database in plain English—no SQL required. DuckDB LLM UDF translates natural language to SQL using large language models like OpenAI GPT-4 and Anthropic Claude.
 
@@ -27,6 +31,12 @@ This Python-based extension creates User-Defined Functions (UDFs) that let you q
 3. 🔍 **SQL Generation**: Converts natural language to accurate SQL
 4. ✅ **Safety First**: Asks for confirmation before executing any generated SQL
 5. 📊 **Results Delivery**: Returns query results in standard DuckDB format
+
+## 🚀 Demo
+
+Here's a screenshot of DuckDB LLM UDF in action:
+
+![DuckDB LLM UDF Demo](docs/demo.png)
 
 ## 🚀 Installation
 
@@ -190,6 +200,12 @@ Here are some example questions you can ask your database:
 
 ## 🔧 How It Works
 
+### Security & Safety
+- Use `execute=False` to preview generated SQL before running it.
+- Always validate output SQL in production contexts to prevent malformed or dangerous queries.
+- LLM prompts are sent to the providers you configure (OpenAI/Anthropic).
+
+
 <p align="center">
   <img src="https://i.imgur.com/waxVImv.png" alt="Divider" width="600">
 </p>
@@ -220,7 +236,7 @@ Contributions are welcome and appreciated! Here's how you can help:
 - 📚 **Improve documentation** to make it clearer or more complete
 - 🧑‍💻 **Submit pull requests** with bug fixes or new features
 
-Please see [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
+Please see [CONTRIBUTING.md](https://github.com/SQLxAI/duckdb-llm-udf/blob/main/CONTRIBUTING.md) for more details.
 
 ## 🙏 Credits
 
