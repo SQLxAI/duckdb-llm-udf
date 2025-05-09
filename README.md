@@ -3,8 +3,6 @@
 ![Python 3.8+](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![DuckDB 0.8.0+](https://img.shields.io/badge/DuckDB-0.8.0+-yellow.svg)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)]
-(https://github.com/SQLxAI/duckdb-llm-udf)
 [![Stars](https://img.shields.io/github/stars/SQLxAI/duckdb-llm-udf?style=social)](https://github.com/SQLxAI/duckdb-llm-udf)
 
 
@@ -36,7 +34,7 @@ This Python-based extension creates User-Defined Functions (UDFs) that let you q
 
 Here's a screenshot of DuckDB LLM UDF in action:
 
-![DuckDB LLM UDF Demo](docs/demo.png)
+![DuckDB LLM UDF Demo](https://github.com/SQLxAI/duckdb-llm-udf/blob/main/docs/demo.png)
 
 ## 🚀 Installation
 
