@@ -65,9 +65,7 @@ def main():
     
     # Load .env file from current working directory
     load_dotenv()
-    # Debug: Print the loaded API key
-    print(f"Loaded OPENAI_API_KEY: {os.environ.get('OPENAI_API_KEY')}")
-
+    
     # Set API key in DuckDB (required for LLM queries)
     api_key = os.environ.get('OPENAI_API_KEY', '')
     if not api_key:
